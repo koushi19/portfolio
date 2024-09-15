@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    
+    <section class="header" id="header">
+        <div class="container">
+            <div class="text-section">
+                <h1><span class="first-name">Koushik</span> <span class="last-name">Sayini</span></h1>
+                <a href="#" class="get-in-touch" id="contactBtn">Get in Touch</a>
+            </div>
+            <div class="image-section">
+                <img src="umesh.jpg" alt="Umesh Bommagani" class="profile-photo">
+            </div>
+        </section break>
+    <nav>
+        <div class="navbar ">
+            <ul>
+                
+                <li><a href ="#about">About Me</a></li>
+                <li><a href ="#Education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href ="#randr">Roles and Responsibilites</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+ 
+    <section class="container">
+        <section class="Education" id="Education">
+            <h3>About me</h3>
+            <p>I am currently pursuing my MSIT at IIIT Hyderabad, where I am sharpening my expertise in programming and web development. I have a solid command of languages like Python, HTML, CSS, and have a good understanding of operating systems and Git. My passion lies in creating efficient and scalable solutions while adhering to best practices in both front-end and back-end development.
+
+                Outside of coding, I enjoy organizing events and traveling in my free time, which helps me build leadership skills and explore new perspectives. I'm always eager to learn, adapt, and contribute to exciting projects that challenge me both technically and creatively.</p>
+            
+    
+        </section>
+        </section>
+    <section class="container">
+    <section class="Education" id="Education">
+        <h3>Education</h3>
+        <p>Intermediate(2018-2020) - Sri Chaitanya Junior College</p>
+        <p>B.TECH(2020-2024) - VNRVJIET </p>
+        <P>MSIT(2024-2026) - IIITH</P>
+        
+        
+
+    </section>
+    </section>
+    <section class="container">
+    <section class="projects" id="projects">
+        <h3>Projects</h3>
+        <p>IOT based Smart Gloves for Miltary Personal communication</p>
+        <p>IOT Irrigation Monitoring & Controller System</p>
+        <p>Line Following Robot
+        </p>
+    </section>
+    </section>
+    <section class="container" id="container">
+    <section class="skills" id="skills">
+        <h3> Skills</h3>
+        <div class="hex-container">
+        <div class="hex" id="hex1"><div class="hex-content">Python</div></div>
+        <div class="hex" id="hex2"><div class="hex-content">HTML</div></div>
+        <div class="hex active" id="hex1"><div class="hex-content">CSS</div></div>
+        <div class="hex" id="hex2"><div class="hex-content">GIT</div></div>
+        <div class="hex" id="hex1"><div class="hex-content">Excel</div></div>
+        <div class="hex" id="hex2"><div class="hex-content">Java</div></div>
+        </div>
+    </section>
+    </section>
+    <section class="container">
+    <section class="randr" id="randr">
+        <h3>Roles and Responsibilites</h3>
+        <p>chairmain for the ISOI in vnrvjiet </p>
+        <p> N-ARMY committe member </p>
+        <p> committe member for the sintillashunz</p>
+    </section>
+    </section>
+    
+
+    
+   
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:koushiksayini13@gmail.com">koushiksayini13@gmail.com</a></p>
+            <p>Phone: <a href="tel:+91 8328113920">+91 8328113920</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Modal logic
+        const modal = document.getElementById("contactModal");
+        const btn = document.getElementById("contactBtn");
+        const span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
